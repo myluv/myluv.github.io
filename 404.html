@@ -6,10 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
+    <meta name="description" content="Bukalah, aku menyatakan cinta padamu setulus hati."/>
+    <meta name="copyright"content="JNCK Media">
+    <meta name="language" content="ID">
+    <meta name="author" content="Dandy">
+    <meta name="copyright" content="Dandy">
+    <meta name="owner" content="Dandy">
+    <meta name="url" content="">
+
+    <meta name="og:title" content="I Love You"/>
+    <meta name="og:type" content="website"/>
+    <meta name="og:site_name" content="I Love You"/>
+    <meta name="og:description" content="Bukalah, aku menyatakan cinta padamu setulus hati."/>
+    <meta name="og:image" content="https://www.belabel.com/motivy/big/3268_picture.png"/>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
-    <title>My Love</title>
+    <title>I Love You</title>
     <script type="text/javascript">
         function ucwords (str) {
             return (str + '')
@@ -25,9 +39,10 @@
         window.onload = function() {
             what();
             function what(){
-                document.title = "My Love " + ucwords(jeneng);
+                document.title = "I Love You " + ucwords(jeneng);
                 document.getElementById("nama").innerHTML = ucwords(jeneng);
                 document.getElementById("nama2").innerHTML = ucwords(jeneng);
+                $('meta[name=url]').attr('content', window.location.href);
             };
         }
 
@@ -91,11 +106,11 @@
                         <p class="card-text">
                             Bahagia itu bila kamu dan aku telah menjadi kita.<br>
                             Menjadi teman memang menyenangkan. Akan lebih mengesankan jika kamu menjadi di hati.<br><br>
-                            Tak ragu lagi untuk ungkapkan kepada seseorang yang ada di hati. Iya, kamu.<br>
+                            Tak ragu lagi untuk ungkapkan kepada seseorang yang ada di hati. Yaitu kamu.<br>
                             Setelah hari berlalu, aku yakin kamu pilihanku.<br>
                             Tak hanya menyenangkan, aku yakin kamu dapat menjadi diandalkan di masa depan.<br>
                             <br>
-                            Kamu mau nggak jadi pacarku?
+                            Kamu mau nggak jadi kekasihku?
                         </p>
                     </div>
                 </div><br>
@@ -104,7 +119,7 @@
                     <div class="card-body">
                         <div class="form-group">
                           <p class="card-text">
-                              Terima kasih <b id="nama2"></b> telah menerima aku yang elek ini menjadi kekasihmu.
+                              Terima kasih <b id="nama2"></b> telah menerima aku yang jelek miskin ini menjadi kekasihmu.
                           </p>
                         </div>
                     </div>
@@ -114,18 +129,25 @@
                         <div class="card-body">
                             <div class="form-group">
                               <p class="card-text">
-                                  Buka di browser PC atau Laptop yaa.
+                                  Buka di browser PC atau Laptop ya beb.
                               </p>
                             </div>
                         </div>
                 </div>
 
-                <button class="btn btn-outline-dark" id="yes" onClick="yes()">YES</button>
-                <button class="btn btn-outline-dark float-right" id="pindah">NO</button>
+                <button class="btn btn-outline-dark" id="yes" onClick="yes()">MAU</button>
+                <button class="btn btn-outline-dark float-right" id="pindah">NGGAK</button>
                 <br><br>
                 <p style="width: 18rem; margin-left: auto; margin-right: auto; font-size: 80%;" class="text-center text-muted">Developed with <span style="color: red;">love</span>  by <a target="_blank" href="https://www.facebook.com/dndyrka">Dandy</a></p>
             </div>
         </div>
     </div>
+    <noscript>
+        <style type="text/css">.container {display:none;}</style>
+        <div class="noscriptmsg">
+            <h1 align="center">Jangan dimatiin javascript nya Sayang!</h1><br>
+            <h5 align="center">Goblok amat.</h5>
+        </div>
+    </noscript>
 </body>
 </html>
