@@ -25,8 +25,9 @@
         window.onload = function() {
             what();
             function what(){
-                document.getElementById("nama").innerHTML = ucwords(jeneng);
                 document.title = "My Love " + ucwords(jeneng);
+                document.getElementById("nama").innerHTML = ucwords(jeneng);
+                document.getElementById("nama2").innerHTML = ucwords(jeneng);
             };
         }
 
@@ -35,7 +36,6 @@
             $('#yes').hide();
             $('#pindah').hide();
             $('#diterima').show();
-            document.getElementById("nama2").innerHTML = ucwords(jeneng);
         }
 
         $(document).ready(function() { 
