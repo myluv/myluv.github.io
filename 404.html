@@ -11,18 +11,24 @@
 
     <title>My Love</title>
     <script type="text/javascript">
-        function ucwords (str) {
-            return (str + '')
-            .replace(/^(.)|\s+(.)/g, function ($1) {
-            return $1.toUpperCase()
-            })
-        }
+        window.onload = function() {
+            what();
 
-        var url = window.location.pathname;
-        var nama = url.replace("/", "");
-        var jeneng = decodeURIComponent(nama);
-        document.getElementById("nama").innerHTML = ucwords(jeneng);
-        document.title = "My Love " + ucwords(jeneng);
+            function ucwords (str) {
+                return (str + '')
+                .replace(/^(.)|\s+(.)/g, function ($1) {
+                return $1.toUpperCase()
+                })
+            }
+
+            function what(){
+                var url = window.location.pathname;
+                var nama = url.replace("/", "");
+                var jeneng = decodeURIComponent(nama);
+                document.getElementById("nama").innerHTML = ucwords(jeneng);
+                document.title = "My Love " + ucwords(jeneng);
+            };
+        }
 
         function f1(){
             $('#pilih').hide();
@@ -80,7 +86,7 @@
            <div id="thebody">
                 <div class="card" id="pilih" style="width: 25rem; margin-left: auto; margin-right: auto;">
                     <div class="card-body">
-                        <h5 class="card-title">Hi <i id="nama">Dandy</i></h5>
+                        <h5 class="card-title">Hi <i id="nama"></i></h5>
                         <p class="card-text">
                             Bahagia itu bila kamu dan aku telah menjadi kita.<br>
                             Menjadi teman memang menyenangkan. Akan lebih mengesankan jika kamu menjadi di hati.<br><br>
@@ -97,7 +103,7 @@
                     <div class="card-body">
                         <div class="form-group">
                           <p class="card-text">
-                              Terima kasih <b><i id="nama">Dandy</i></b> telah menerima aku yang elek ini menjadi kekasihmu.
+                              Terima kasih <b><i id="nama"></i></b> telah menerima aku yang elek ini menjadi kekasihmu.
                           </p>
                         </div>
                     </div>
