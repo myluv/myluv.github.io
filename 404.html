@@ -11,20 +11,20 @@
 
     <title>My Love</title>
     <script type="text/javascript">
+        function ucwords (str) {
+            return (str + '')
+            .replace(/^(.)|\s+(.)/g, function ($1) {
+            return $1.toUpperCase()
+            })
+        }
+
+        var url = window.location.pathname;
+        var nama = url.replace("/", "");
+        var jeneng = decodeURIComponent(nama);
+
         window.onload = function() {
             what();
-
-            function ucwords (str) {
-                return (str + '')
-                .replace(/^(.)|\s+(.)/g, function ($1) {
-                return $1.toUpperCase()
-                })
-            }
-
             function what(){
-                var url = window.location.pathname;
-                var nama = url.replace("/", "");
-                var jeneng = decodeURIComponent(nama);
                 document.getElementById("nama").innerHTML = ucwords(jeneng);
                 document.title = "My Love " + ucwords(jeneng);
             };
